@@ -13,7 +13,7 @@
 
 body {
   background-image: url("./img/detalle-hoja-naranja.jpg");
-   font-family: roboto; 
+   font-family: Arial, Helvetica, sans-serif ; 
   max-width: 1440px;
 }
 
@@ -71,39 +71,61 @@ align-items: center;
   list-style: none;
 }
 .items ul li {
-  text-shadow: 2px 1px 10px black;
+  text-shadow: 2px 1px 30px black;
   margin-bottom: 0.35rem;
-  font-size: 1rem;
+  font-size: .9rem;
+  font-weight: 800;
 }
 .items .subtittle {
   font-size: 1rem;
-  text-shadow: 1px 0px 10px black;
+  text-shadow: 2px 1px 30px black;
   text-align: center;
   margin-bottom: 1rem;
   margin-top: 1rem;
+  font-weight: 800;
+
 }
 .items ul li.row {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
   padding: 5px;
+  gap:20px;
 }
 
 .items ul li.row p:first-child{
     text-align: start;
 }
+footer{
+  height: 180px;
+  margin-top: 20px;
+  overflow: hidden;
+}
 .img-container {
-    position: relative;
-    min-width: 1px;
+  position: relative;
+  min-width: 1px;
 }
 .img-hojas {
     top:0;
     position: absolute;
     max-width: 375px;
 }
-.img-hoja-derecha {
-    position: absolute;
-    right: 0;
-    max-width: 275px;
-
+.hojas-container{
+  position: relative;
+  width: 100%;
+  display: block;
+  height: 180px;
+}
+img.hojas-position-entera {
+  position: absolute;
+  width: 100%;
+  transform: scaleX(-1);
+  bottom: -30px;
+  max-width: 370px;
+}
+img.hojas-position-derecha {
+  position: absolute;
+  right: 0px;
+  height:auto;
+  max-height: 176px;
 }
