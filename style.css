@@ -4,6 +4,7 @@
   font-style: normal;
   font-weight: normal;
 }
+
 @font-face {
   font-family: "Akira Expanded";
   src: url("./assets/tipografia/Akira\ Expanded\ Demo.otf");
@@ -27,7 +28,6 @@ body {
 
 .wrapper {
   max-width: 1440px;
-
   margin: 0 auto;
   padding: 20px;
   display: flex;
@@ -35,19 +35,21 @@ body {
 }
 
 .header-container {
-    display: flex;
-    justify-content: center;
-align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .hojas-arriba {
   position: absolute;
   width: 100%;
   transform: scaleX(-1);
   top: -10px;
   max-width: 370px;
-  left:0;
+  left: 0;
   right: 0;
 }
+
 .logo-positive {
   opacity: .9;
   padding: 20px;
@@ -56,7 +58,6 @@ align-items: center;
   z-index: 99999;
   left: 65px;
   bottom: 10px;
-
   filter: drop-shadow(0 0 10px black);
 }
 
@@ -69,8 +70,8 @@ align-items: center;
   color: white;
   font-size: 1.9rem;
   text-transform: uppercase;
-  font-family: "Stretch Pro"; 
-  text-shadow: 2px 1px 20px rgba(187, 128, 52, 0.76);
+  font-family: "Stretch Pro";
+  text-shadow: 1px 1px 20px rgba(145, 98, 36, 0.596);
 }
 
 .menu-container {
@@ -81,94 +82,106 @@ align-items: center;
   align-items: center;
   flex: 1 1 auto;
 }
-.hoja-position {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .items {
   color: #ffffff;
   text-transform: uppercase;
   z-index: 1000;
 }
+
 .items ul {
   text-align: center;
   list-style: none;
 }
+
 .items ul li {
-  text-shadow: 2px 1px 20px rgba(145, 98, 36, 0.76);
+  text-shadow: 1px 1px 20px rgba(145, 98, 36, 0.651);
   margin-bottom: 0.35rem;
   font-size: 0.7rem;
   font-weight: 900;
-  
+
 }
+
 .items .subtittle {
   font-size: 1.2rem;
-  text-shadow: 2px 1px 20px rgba(145, 98, 36, 0.76);
+  text-shadow: 1px 1px 20px rgba(145, 98, 36, 0.596);
   text-align: center;
   margin-bottom: 0.5rem;
   margin-top: 1rem;
   font-weight: 800;
-  font-family: "Stretch Pro"; 
-  
+  font-family: "Stretch Pro";
+
 
 }
+
 .items ul li.row {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
   padding: 5px;
-  gap:20px;
-  
+  gap: 20px;
+
 }
 
-.items ul li.row p:first-child{
-    text-align: start;
-    
+.items ul li.row p:first-child {
+  text-align: start;
+
 }
-footer{
+
+footer {
   height: 180px;
   margin-top: 20px;
   overflow: hidden;
 }
+
+.hoja-position {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .img-container {
   position: relative;
   min-width: 1px;
 }
+
 .img-hojas {
-    top:0;
-    position: absolute;
-    max-width: 375px;
+  top: 0;
+  position: absolute;
+  max-width: 375px;
 }
-.hojas-container{
+
+.hojas-container {
   position: relative;
   width: 100%;
   display: block;
   height: 180px;
 }
+
 img.hojas-position-entera {
   position: absolute;
   width: 100%;
   transform: scaleX(-1);
   bottom: -5px;
   max-width: 370px;
-  left:0;
+  left: 0;
   margin-top: 50%;
   right: 0;
 }
+
 img.hojas-position-derecha {
   position: absolute;
   right: 0px;
-  height:auto;
+  height: auto;
   max-height: 176px;
   max-width: 180px;
 }
 
 .camaleon-position {
   position: absolute;
-/*   transform: scaleX(-1); */
+  /*   transform: scaleX(-1); */
   max-width: 300px;
   bottom: -0px;
-left: 120px;
+  left: 120px;
   z-index: 999;
 }
