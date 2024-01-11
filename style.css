@@ -4,6 +4,11 @@
   font-style: normal;
   font-weight: normal;
 }
+@font-face {
+  font-family: "Akira Expanded";
+  src: url("./assets/tipografia/Akira\ Expanded\ Demo.otf");
+
+}
 
 * {
   margin: 0px;
@@ -12,13 +17,12 @@
 }
 
 body {
-  background-image: url("./img/detalle-hoja-naranja-2.jpg");
-   font-family: Arial, Helvetica, sans-serif ; 
-  max-width: 1440px;
+  background-image: url("./img/arena-natural-fondo-playa\ \(1\).jpg");
+  font-family: 'Akira Expanded';
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 10px;
+  font-weight: bold;
 }
 
 .wrapper {
@@ -35,22 +39,38 @@ body {
     justify-content: center;
 align-items: center;
 }
-
+.hojas-arriba {
+  position: absolute;
+  width: 100%;
+  transform: scaleX(-1);
+  top: -10px;
+  max-width: 370px;
+  left:0;
+  right: 0;
+}
 .logo-positive {
+  opacity: .9;
   padding: 20px;
-  max-width: 300px;
-  margin-top: 50px;
-  filter: invert(100%) drop-shadow(0px 0px 10px black);
+  max-width: 250px;
+  position: absolute;
+  z-index: 99999;
+  left: 65px;
+  bottom: 10px;
+
+  filter: drop-shadow(0 0 10px black);
 }
 
 .tittle {
+  margin-bottom: 20px;
+  margin-top: 80px;
+  z-index: 1000;
   display: flex;
   justify-content: flex-start;
   color: white;
   font-size: 2rem;
   text-transform: uppercase;
-  text-shadow: 1px 0px 10px black;
-  margin-bottom: 1rem;
+  font-family: "Stretch Pro"; 
+  text-shadow: 2px 1px 30px rgb(65, 43, 11);
 }
 
 .menu-container {
@@ -69,24 +89,29 @@ align-items: center;
 .items {
   color: #ffffff;
   text-transform: uppercase;
+  z-index: 1000;
 }
 .items ul {
   text-align: center;
   list-style: none;
 }
 .items ul li {
-  text-shadow: 2px 1px 30px black;
+  text-shadow: 2px 1px 30px rgba(80, 41, 15, 0.856);
   margin-bottom: 0.35rem;
-  font-size: .9rem;
-  font-weight: 800;
+  font-size: 0.9rem;
+  font-weight: 900;
+  
 }
 .items .subtittle {
-  font-size: 1rem;
-  text-shadow: 2px 1px 30px black;
+
+  font-size: 1.2rem;
+  text-shadow: 2px 1px 30px rgba(80, 41, 15, 0.815);
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   margin-top: 1rem;
   font-weight: 800;
+  font-family: "Stretch Pro"; 
+  
 
 }
 .items ul li.row {
@@ -95,10 +120,12 @@ align-items: center;
   flex-wrap: nowrap;
   padding: 5px;
   gap:20px;
+  
 }
 
 .items ul li.row p:first-child{
     text-align: start;
+    
 }
 footer{
   height: 180px;
@@ -124,7 +151,7 @@ img.hojas-position-entera {
   position: absolute;
   width: 100%;
   transform: scaleX(-1);
-  bottom: -30px;
+  bottom: -5px;
   max-width: 370px;
   left:0;
   margin-top: 50%;
@@ -136,4 +163,13 @@ img.hojas-position-derecha {
   height:auto;
   max-height: 176px;
   max-width: 180px;
+}
+
+.camaleon-position {
+  position: absolute;
+/*   transform: scaleX(-1); */
+  max-width: 300px;
+  bottom: -0px;
+left: 120px;
+  z-index: 999;
 }
