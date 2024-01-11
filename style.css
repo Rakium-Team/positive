@@ -70,7 +70,7 @@ align-items: center;
   font-size: 1.9rem;
   text-transform: uppercase;
   font-family: "Stretch Pro"; 
-  text-shadow: 2px 1px 30px rgba(110, 72, 23, 0.76);
+  text-shadow: 2px 1px 20px rgba(187, 128, 52, 0.76);
 }
 
 .menu-container {
@@ -96,16 +96,15 @@ align-items: center;
   list-style: none;
 }
 .items ul li {
-  text-shadow: 2px 1px 30px rgba(122, 82, 31, 0.74);
+  text-shadow: 2px 1px 20px rgba(145, 98, 36, 0.76);
   margin-bottom: 0.35rem;
   font-size: 0.7rem;
   font-weight: 900;
   
 }
 .items .subtittle {
-
   font-size: 1.2rem;
-  text-shadow: 2px 1px 30px rgba(110, 72, 23, 0.712);
+  text-shadow: 2px 1px 20px rgba(145, 98, 36, 0.76);
   text-align: center;
   margin-bottom: 0.5rem;
   margin-top: 1rem;
